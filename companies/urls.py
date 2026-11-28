@@ -1,0 +1,6 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('toggle/<int:vacancy_id>/', views.toggle_favorite, name='toggle_favorite'),
+]

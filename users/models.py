@@ -10,6 +10,7 @@ class Profile(models.Model):
     date_of_birth = models.DateField(blank=True, null=True)
     location = models.CharField(max_length=100, blank=True, null=True)
     is_verified = models.BooleanField(default=False)
+    city = models.CharField(max_length=100, default='Москва')
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
